@@ -1,0 +1,116 @@
+.light_text{
+    font-size: 60px;
+    font-weight: 200;
+    color: #fff;
+}
+
+
+
+.fa-star{
+    margin-right: 10px;
+    font-size: 27px;
+    color: gold;
+}
+.buttons a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 10px 30px;
+}
+.buttons .buy{
+    background-color: rgb(255, 0, 166);
+    border-radius: 40px;
+    position: relative;
+    padding: 10px 50px;
+}
+.buttons .buy::after{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    content: "$80";
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 12px;
+    background-color: rgb(205, 0, 134);
+}
+.video-img2{
+    max-width: 100%;
+    border: 0;
+}
+.buttons .demo{
+    background-color: unset;
+    border-radius: 40px;
+    border: 2px solid #fff;
+}
+.home-bg{
+    background-image: url(../bg\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+    padding: 100px 0;
+}
+.home-bg::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: -10000;
+}
+.content{
+    color: #fff;
+}
+
+.build{
+    max-width: 500px;
+    font-size: 17px;
+}
+.rating{
+    display: inline-block;
+    background-color: #555;
+    border-radius: 30px;
+    color: gold;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 7px 10px;
+    margin: 20px 0;
+}
+.video-img{
+    position: relative;
+}
+.video-img .fa-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   background-color: gold;
+   transform: translate(-50%,-50%);
+   color: #fff;
+   border-radius: 50%;
+   padding: 30px;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(5);
+        opacity: 0.7; 
+    }
+    100% {
+      transform: scale(2.75);
+      opacity: 0;
+    }
+}
+.video-img .fa-play::after{
+    content: "";
+    position: absolute;
+    padding: 50px;
+    border-radius: 100%;
+    opacity: 0.5;
+    animation: pulse 3s ease-out infinite;
+    
+}
+@media only screen and (max-width: 992px){
+    .video-img{
+        margin-top: 100px;
+    }
+}
